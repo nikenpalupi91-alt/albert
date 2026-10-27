@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello There</title>
+
+  <style>
+    body {
+      background-color: #FFF2A6;
+      color: magenta;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 100px;
+    }
+
+    h1 {
+      color: #ff4d6d;
+    }
+
+    button {
+      background-color: #8b0000;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+    }
+
+    #pesan {
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Hello There</h1>
+
+  <p>Yes, you are</p>
+
+<button onclick="Albert()">Open</button>
+
+  <p id="pesan">Do You Miss Me???</p>
+
+  <script>
+    function Albert() {
+      let pesan = document.getElementById("pesan");
+
+      if (pesan.style.display === "none") {
+        pesan.style.display = "block";
+      } else {
+        pesan.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
+
